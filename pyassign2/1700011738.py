@@ -1,5 +1,7 @@
-#currency exchange
-#author 钟秉辰 Zhong Bingchen 1700011738
+#currency.py: do currency change automatically
+#__author__= "Zhong Bingchen"
+#__pkuid__= "1700011738"
+#__email__= "1700011738@pku.edu.cn"
 #2017.12.4
 """Module for currency exchange
 
@@ -35,9 +37,13 @@ def test_output():
     assert n>0
     assert type(n)==float
 
-f=input("from")
-t=input("to")
-a=input("amount")    #input three parameters
-test_input(f, t, a)
-exchange(f, t, a)
-test_output()
+def main():
+    f=input("from")
+    t=input("to")
+    a=input("amount")    #input three parameters
+    test_input(f, t, a)
+    exchange(f, t, a)
+    test_output()
+
+if __name__== '__main__':
+    main()
